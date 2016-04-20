@@ -1,0 +1,57 @@
+$main-background-color: #001C3D;
+$main-text-color: #FFF;
+
+$logo-width: 225px;
+
+
+body {
+    background-color: $main-background-color;
+    color: $main-text-color;
+}
+
+h1, h2 {
+    color: $main-text-color;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .target {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        
+    }
+    
+    .logo, .msg {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .logo {
+        img {
+            width: $logo-width;
+            border-bottom: 2px solid white;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 20px;
+        }
+    }
+
+    
+    .msg {
+         padding-top: 15px;
+        
+         p {
+             font-size: 22px;
+             color: #EEEEEE;
+             margin: 0px;
+         }
+    }
+}
